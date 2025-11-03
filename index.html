@@ -206,27 +206,8 @@
 
     <!-- 訂製專屬於您的完美耳機 -->
     <section class=" bg-[#404040] ">
-        <div class="flex max-w-[1296px] w-[100%] mx-auto max-sm:flex-col sm:gap-x-[24px] py-[60px]">
-
-            <!-- 手機表單 -->
-            <div class="hidden mb-[48px] px-[12px]">
-                <h2 class="font-[500] text-[32px] text-center mb-[24px]">訂製專屬於您的完美耳機</h2>
-                <p class="mb-[48px]">請於下方留下您的詳細資料與訂製需求，將有專人於 3 日內聯繫，此表單僅做為客服調查，不等同於完成訂製商品。</p>
-                <form action="" method="post">
-                    <div class="flex flex-col gap-y-[16px] mb-[24px]">
-                        <!-- 姓氏 名字 信箱 電話 -->
-                        <input class="p-[12px] border " type="text" name="lastname"
-                            id="lastname" placeholder="姓氏">
-                        <input class="p-[12px] border " type="text" name="firstname"
-                            id="firstname" placeholder="名字">
-                        <input class="p-[12px] border " type="email" name="email"
-                            id="email" placeholder="信箱">
-                        <input class="p-[12px] border " type="tel" name="phone"
-                            id="phone" placeholder="電話">
-                    </div>
-                    <button class="bg-[#000] text-[#fff] px-[24px] py-[12px] rounded-[4px]" type="submit">送出表單</button>
-                </form>
-            </div>
+        <div
+            class="flex max-sm:flex-col-reverse max-w-[1296px] w-[100%] mx-auto max-sm:flex-col sm:gap-x-[24px] gap-y-[24px] py-[60px]">
             <!-- 左 -->
             <div class="left flex flex-1 gap-[16px] sm:gap-[24px] sm:py-[5px]">
                 <div class="flex-1 pt-[48px] flex flex-col sm:gap-[24px] gap-[16px]">
@@ -252,22 +233,60 @@
 
             </div>
             <!-- 右 -->
-            <div class="right flex-1 sm:py-[calc(10px+24px)] max-sm:hidden">
+            <div class="right flex-1 sm:py-[calc(10px+24px)] px-[12px]">
                 <h2 class="font-[500] text-[32px] text-center mb-[24px]">訂製專屬於您的完美耳機</h2>
                 <p class="mb-[48px]">請於下方留下您的詳細資料與訂製需求，將有專人於 3 日內聯繫，此表單僅做為客服調查，不等同於完成訂製商品。</p>
-                <form action="" method="post">
+                <!-- 手機表單 -->
+                <form class="sm:hidden" action="" method="post">
+                    <div class="flex flex-col gap-y-[24px] mb-[24px] ">
+                        <!-- 姓氏 名字 信箱 電話 -->
+                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                            type="text" name="lastname" id="lastname" placeholder="姓氏111">
+                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                            type="text" name="firstname" id="firstname" placeholder="名字">
+                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                            type="email" name="email" id="email" placeholder="信箱">
+                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]" type="tel"
+                            name="phone" id="phone" placeholder="電話">
+                    </div>
+                    <button
+                        class="bg-[#000] text-[#fff] px-[24px] py-[16px] w-full bg-[#fff] text-[black] rounded-[4px]"
+                        type="submit">送出表單</button>
+                </form>
+
+                <!-- 電腦表單 -->
+                <form class="max-sm:hidden " action="" method="post">
                     <div class="flex flex-col gap-y-[16px] mb-[24px]">
                         <!-- 姓氏 名字 信箱 電話 -->
-                        <input class="p-[12px] border " type="text" name="lastname"
-                            id="lastname" placeholder="姓氏">
-                        <input class="p-[12px] border " type="text" name="firstname"
-                            id="firstname" placeholder="名字">
-                        <input class="p-[12px] border " type="email" name="email"
-                            id="email" placeholder="信箱">
-                        <input class="p-[12px] border " type="tel" name="phone"
-                            id="phone" placeholder="電話">
+                        <label for="lastname">
+                            姓氏
+                        </label>
+                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                            type="text" name="lastname" id="lastname" placeholder="姓氏222">
+                        <label for="firstname">
+                            名字
+                        </label>
+                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                            type="text" name="firstname" id="firstname" placeholder="名字">
+                        <label for="email">
+                            信箱
+                        </label>
+                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                            type="email" name="email" id="email" placeholder="信箱">
+                        <label for="phone">
+                            電話
+                        </label>
+                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]" type="tel"
+                            name="phone" id="phone" placeholder="電話">
                     </div>
-                    <button class="bg-[#000] text-[#fff] px-[24px] py-[12px] rounded-[4px]" type="submit">送出表單</button>
+                    <div class="flex justify-end">
+                        <button
+                            class="bg-[#000] text-[#fff] px-[24px] py-[12px] rounded-[4px] bg-[#fff] text-[black]  "
+                            type="submit">
+                            送出表單
+                        </button>
+
+                    </div>
                 </form>
             </div>
 
