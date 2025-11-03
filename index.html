@@ -1,20 +1,57 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style type="text/tailwindcss">
-    @layer utilities {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        body {
+            font-family: 'Noto Sans CJK TC', sans-serif;
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @layer utilities {
       .content-auto {
         content-visibility: auto;
       }
     }
   </style>
 </head>
+
 <body>
-  <div class="lg:content-auto">
-    hello world
-  </div>
+    <header class="flex h-[88px] items-center sm:px-[80px] px-[12px] max-w-[1920px] mx-auto justify-between">
+        <h1 class="">
+            <img src="./logo.svg" alt="" srcset="">
+        </h1>
+
+        <ul class="max-sm:hidden flex gap-x-[48px]">
+            <li class="p-[8px]">首頁</li>
+            <li class="p-[8px]">最新消息</li>
+            <li class="p-[8px]">產品列表</li>
+            <li class="p-[8px]">關於我們</li>
+        </ul>
+
+        <div class="flex gap-x-[16px]">
+            <div class="">
+                <img class="object-cover" src="./search.svg" alt="">
+            </div>
+
+            <div class="sm:hidden">
+                <img class="object-cover" src="./menu.svg" alt="">
+            </div>
+
+        </div>
+    </header>
 </body>
+
 </html>
