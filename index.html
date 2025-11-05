@@ -37,32 +37,32 @@
 
 <body>
     <header class="flex h-[88px] items-center sm:px-[80px] px-[12px] max-w-[1920px] mx-auto justify-between">
-        <div class="">
-            <img src="./images/logo.svg" alt="" srcset="">
+        <div class="w-[80px] flex-none">
+            <img class="whitespace-nowrap" src="./images/logo.svg" alt="" srcset="">
         </div>
 
-        <ul class="max-sm:hidden flex gap-x-[48px]">
+        <ul class="max-md:hidden flex gap-x-[48px]">
             <li class="p-[8px]">
-                <a href="#">首頁</a>
+                <a class="whitespace-nowrap" href="#">首頁</a>
             </li>
             <li class="p-[8px]">
-                <a href="#">最新消息</a>
+                <a class="whitespace-nowrap" href="#">最新消息</a>
             </li>
             <li class="p-[8px]">
-                <a href="#">產品列表</a>
+                <a class="whitespace-nowrap" href="#">產品列表</a>
             </li>
             <li class="p-[8px]">
-                <a href="#">關於我們</a>
+                <a class="whitespace-nowrap" href="#">關於我們</a>
             </li>
         </ul>
 
         <div class="flex gap-x-[16px]">
-            <div class="">
+            <div class="flex-none">
                 <img class="object-cover" src="./images/search.svg" alt="">
             </div>
 
-            <div class="sm:hidden">
-                <img class="object-cover" src="./images/menu.svg" alt="">
+            <div class="md:hidden">
+                <img class="object-cover flex-none" src="./images/menu.svg" alt="">
             </div>
 
         </div>
@@ -71,9 +71,9 @@
     <!-- 1920 1296(中間含圖片) 856*514(靠左) -->
     <section>
         <div
-            class="max-sm:hidden w-full flex justify-center items-center bg-[url('images/bennerBig.jpg')] aspect-[1920/634] max-h-[636px]  bg-center bg-cover ">
+            class="max-sm:hidden w-full flex justify-center items-center h-[634px] bg-[url('images/bennerBig.jpg')] aspect-[1920/634] max-h-[636px]  bg-center bg-cover ">
             <div class="max-w-[1296px] w-full h-full ">
-                <div class="max-w-[636px] ml-[48%] text-[#fff] h-[100%] flex flex-col justify-center">
+                <div class="max-w-[636px] ml-[50%] text-[#fff] h-[100%] flex flex-col justify-center">
                     <h2 class=" font-[500] text-[40px]">INEAR PRO MAX</h2>
                     <p>9/16 - 10/30 官網搶先販售</p>
                     <p>新色上市，搭載最新降噪技術，提供給您最高音質享受，採用適應性演算法，快速處理音效，讓您享受更高傳真的效果。</p>
@@ -136,61 +136,58 @@
         <div
             class="max-sm:hidden flex flex-col justify-center items-center bg-[url('images/bg寬.jpg')] aspect-ratio bg-center bg-cover w-full py-[60px] ">
             <!-- <div class=""> -->
-                <div class="mb-[48px] text-center ">
-                    <div class=" font-[500] text-[32px]">多色選擇，專屬你的與眾不同</div>
-                    <div>我的風格我主張，獨創品牌限定色，除了耀眼更要獨一無二</div>
-                </div>
-                <!-- 很多商品 -->
-                <div class="flex  justify-center max-w-[1076px] w-full px-[12px] ">
-                    <div class="flex max-sm:flex-col px-[12px] gap-x-[24px] w-full">
-                        <!-- 左側 -->
-                        <div class="max-w-[636px] max-h-[306px] max-sm:w-full flex flex-col gap-[24px] ">
-                            <div class="flex gap-[24px]">
-                                <div class="max-w-[306px] ">
-                                    <img class="object-cover w-full aspect-[306/306]" src="./images/s3-1.jpg"
-                                        alt="">
-                                </div>
-
-                                <div class="w-[306px] flex flex-wrap gap-x-[24px]">
-                                    <div class="w-full mb-[24px]">
-                                        <img class="object-cover w-full aspect-[306/141] "
-                                            src="./images/s3-2.jpg" alt="">
-                                    </div>
-                                    <div class="w-full">
-                                        <img class="object-cover w-full aspect-[306/141] "
-                                            src="./images/s3-3.jpg" alt="">
-                                    </div>
-                                </div>
+            <div class="mb-[48px] text-center ">
+                <div class=" font-[500] text-[32px]">多色選擇，專屬你的與眾不同</div>
+                <div>我的風格我主張，獨創品牌限定色，除了耀眼更要獨一無二</div>
+            </div>
+            <!-- 很多商品 -->
+            <div class="flex  justify-center max-w-[1076px] w-full px-[12px] ">
+                <div class="flex max-sm:flex-col px-[12px] gap-x-[24px] w-full">
+                    <!-- 左側 -->
+                    <div class="max-w-[636px] max-h-[306px] max-sm:w-full flex flex-col gap-[24px] ">
+                        <div class="flex gap-[24px]">
+                            <div class="max-w-[306px] ">
+                                <img class="object-cover w-full aspect-[306/306]" src="./images/s3-1.jpg" alt="">
                             </div>
 
-                            <!-- 左側下方 -->
-                            <div class="w-full  ">
-                                <img class="object-cover max-h-[376px] w-full aspect-[636/376]" src="./images/s3-4.jpg"
-                                    alt="">
+                            <div class="w-[306px] flex flex-wrap gap-x-[24px]">
+                                <div class="w-full mb-[24px]">
+                                    <img class="object-cover w-full aspect-[306/141] " src="./images/s3-2.jpg" alt="">
+                                </div>
+                                <div class="w-full">
+                                    <img class="object-cover w-full aspect-[306/141] " src="./images/s3-3.jpg" alt="">
+                                </div>
                             </div>
-
                         </div>
 
-                        <!-- 右側 -->
-                        <div class="w-[416px] max-sm:w-full flex flex-col gap-y-[8px] sm:gap-[24px] ">
-                            <div class=" ">
-                                <img class="object-cover max-h-[219px] w-full aspect-[416/218.84]" src="./images/s3-5.jpg"
-                                    alt="">
-                            </div>
-
-                            <div class="  ">
-                                <img class="object-cover max-h-[219px] w-full aspect-[416/218.84]" src="./images/s3-6.jpg"
-                                    alt="">
-                            </div>
-
-                            <div class=" ">
-                                <img class="object-cover max-h-[219px] w-full aspect-[416/218.84]" src="./images/s3-7.jpg"
-                                    alt="">
-                            </div>
+                        <!-- 左側下方 -->
+                        <div class="w-full  ">
+                            <img class="object-cover max-h-[376px] w-full aspect-[636/376]" src="./images/s3-4.jpg"
+                                alt="">
                         </div>
 
                     </div>
+
+                    <!-- 右側 -->
+                    <div class="w-[416px] max-sm:w-full flex flex-col gap-y-[8px] sm:gap-[24px] ">
+                        <div class=" ">
+                            <img class="object-cover max-h-[219px] w-full aspect-[416/218.84]" src="./images/s3-5.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="  ">
+                            <img class="object-cover max-h-[219px] w-full aspect-[416/218.84]" src="./images/s3-6.jpg"
+                                alt="">
+                        </div>
+
+                        <div class=" ">
+                            <img class="object-cover max-h-[219px] w-full aspect-[416/218.84]" src="./images/s3-7.jpg"
+                                alt="">
+                        </div>
+                    </div>
+
                 </div>
+            </div>
             <!-- </div> -->
 
 
@@ -299,23 +296,35 @@
                         <label for="lastname">
                             姓氏
                         </label>
-                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
-                            type="text" name="lastname" id="lastname" placeholder="請輸入姓氏">
+                        <div class="max-w-[636px] w-full">
+                            <input class="w-full pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                                type="text" name="lastname" id="lastname" placeholder="請輸入姓氏">
+                        </div>
+
+                        
                         <label for="firstname">
                             名字
                         </label>
-                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
-                            type="text" name="firstname" id="firstname" placeholder="請輸入名字">
+                        <div class="">
+                            <input class="w-full pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                                type="text" name="firstname" id="firstname" placeholder="請輸入名字">
+                        </div>
+
                         <label for="email">
                             信箱
                         </label>
-                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
-                            type="email" name="email" id="email" placeholder="請輸入信箱">
+                        <div class="">
+                            <input class="w-full pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]"
+                                type="email" name="email" id="email" placeholder="請輸入信箱">
+                        </div>
+
                         <label for="phone">
                             聯絡電話
                         </label>
-                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]" type="tel"
-                            name="phone" id="phone" placeholder="請輸入聯絡電話">
+                        <div class="">
+                            <input class="w-full pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px]" type="tel"
+                                name="phone" id="phone" placeholder="請輸入聯絡電話">
+                        </div>
                     </div>
                     <div class="flex justify-end">
                         <button class="bg-[#000] text-[#fff] px-[24px] py-[12px] rounded-[4px] bg-[#fff] text-[black]  "
@@ -357,8 +366,8 @@
         </div>
 
         <div
-            class="max-w-[calc(1296px+80px)] w-[100%] sm:px-[80px]  text-[#fff] flex  max-sm:flex-wrap gap-y-[40px] justify-start sm:justify-between ">
-            <div class="flex gap-x-[24px] max-sm:w-full">
+            class="max-w-[calc(1296px+80px)] w-[100%] md:px-[80px]  text-[#fff] flex  max-md:flex-wrap gap-y-[40px] justify-start sm:justify-between ">
+            <div class="flex gap-x-[24px] max-md:w-full">
                 <div>
                     <a class="whitespace-nowrap" href="#latest-products">最新商品</a>
                 </div>
