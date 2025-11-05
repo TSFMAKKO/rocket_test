@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>INEAR</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -37,41 +38,58 @@
 <body>
     <header class="flex h-[88px] items-center sm:px-[80px] px-[12px] max-w-[1920px] mx-auto justify-between">
         <div class="">
-            <img src="./logo.svg" alt="" srcset="">
+            <img src="./images/logo.svg" alt="" srcset="">
         </div>
 
         <ul class="max-sm:hidden flex gap-x-[48px]">
-            <li class="p-[8px]">首頁</li>
-            <li class="p-[8px]">最新消息</li>
-            <li class="p-[8px]">產品列表</li>
-            <li class="p-[8px]">關於我們</li>
+            <li class="p-[8px]">
+                <a href="#">首頁</a>
+            </li>
+            <li class="p-[8px]">
+                <a href="#">最新消息</a>
+            </li>
+            <li class="p-[8px]">
+                <a href="#">產品列表</a>
+            </li>
+            <li class="p-[8px]">
+                <a href="#">關於我們</a>
+            </li>
         </ul>
 
         <div class="flex gap-x-[16px]">
             <div class="">
-                <img class="object-cover" src="./search.svg" alt="">
+                <img class="object-cover" src="./images/search.svg" alt="">
             </div>
 
             <div class="sm:hidden">
-                <img class="object-cover" src="./menu.svg" alt="">
+                <img class="object-cover" src="./images/menu.svg" alt="">
             </div>
 
         </div>
     </header>
 
-    <section class="relative flex  sm:max-h-[634px] max-h-[610px] py-[48px] sm:py-[60px] px-[312px] max-sm:px-[0px] bg-[#000] items-center ">
-        <div class=" max-w-[865px] w-[100%] max-sm:pl-[150px] ">
-            <img class="object-cover w-full max-h-[574px] aspect-[865/574]  max-sm:aspect-[425/564]" src="./s1.jpg" alt="">
-
+    <!-- 1920 1296(中間含圖片) 856*514(靠左) -->
+    <section>
+        <div
+            class="max-sm:hidden w-full flex justify-center items-center bg-[url('images/bennerBig.jpg')] aspect-[1920/634] max-h-[636px]  bg-center bg-cover ">
+            <div class="max-w-[1296px] w-full h-full ">
+                <div class="max-w-[636px] ml-[48%] text-[#fff] h-[100%] flex flex-col justify-center">
+                    <h2 class=" font-[500] text-[40px]">INEAR PRO MAX</h2>
+                    <p>9/16 - 10/30 官網搶先販售</p>
+                    <p>新色上市，搭載最新降噪技術，提供給您最高音質享受，採用適應性演算法，快速處理音效，讓您享受更高傳真的效果。</p>
+                </div>
+            </div>
         </div>
-        <div class="max-w-[431px] w-[100%] h-[100%] bg-[#000] ">
 
-        </div>
-
-        <div class="text-[#fff] z-10 ml-[-100px] max-sm:ml-0 max-w-[636px] max-sm:absolute max-sm:bottom-[48px] max-sm:px-[12px]">
-            <h1>INEAR PRO MAX</h1>
-            <p>9/16 - 10/30 官網搶先販售</p>
-            <p>新色上市，搭載最新降噪技術，提供給您最高音質享受，採用適應性演算法，快速處理音效，讓您享受更高傳真的效果。</p>
+        <div class="sm:hidden w-full py-[48px] bg-[#000]">
+            <div
+                class="max-w-[1296px] bg-[url('images/bennerMobile.jpg')] aspect-[375/514]  bg-center bg-cover w-full border border-[#e5e5e5] h-full flex justify-end items-center ">
+                <div class="w-full px-[12px] text-[#fff] h-[100%] flex flex-col justify-end">
+                    <h2 class=" font-[500] text-[40px]">INEAR PRO MAX</h2>
+                    <p>9/16 - 10/30 官網搶先販售</p>
+                    <p>新色上市，搭載最新降噪技術，提供給您最高音質享受，採用適應性演算法，快速處理音效，讓您享受更高傳真的效果。</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -83,7 +101,7 @@
                 <div class="flex max-sm:flex-col px-[12px] gap-x-[24px] w-full">
                     <div class="w-[1/3] max-sm:w-full flex flex-col gap-y-[8px] sm:gap-x-[24px] ">
                         <div class="">
-                            <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s2-1.jpg" alt="">
+                            <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s2-1.jpg" alt="">
                         </div>
                         <div class="p-[8px]">
                             INEAR PRO II
@@ -92,7 +110,7 @@
 
                     <div class="w-[1/3] max-sm:w-full flex flex-col gap-y-[8px] sm:gap-x-[24px] ">
                         <div class="">
-                            <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s2-2.jpg" alt="">
+                            <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s2-2.jpg" alt="">
                         </div>
                         <div class="p-[8px]">
                             INEAR PRO MAX
@@ -101,7 +119,7 @@
 
                     <div class="w-[1/3] max-sm:w-full flex flex-col gap-y-[8px] sm:gap-x-[24px] ">
                         <div class="">
-                            <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s2-3.jpg" alt="">
+                            <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s2-3.jpg" alt="">
                         </div>
                         <div class="p-[8px]">
                             INEAR PRO I
@@ -126,22 +144,24 @@
                     <div class="max-w-[636px] max-h-[306px] max-sm:w-full flex flex-col gap-[24px] ">
                         <div class="flex gap-[24px]">
                             <div class="max-w-[306px] ">
-                                <img class="object-cover h-full w-full aspect-square" src="./s3-1.jpg" alt="">
+                                <img class="object-cover h-full w-full aspect-square" src="./images/s3-1.jpg" alt="">
                             </div>
-    
+
                             <div class="w-[306px] flex flex-wrap gap-x-[24px]">
                                 <div class="w-full mb-[24px]">
-                                    <img class="object-cover h-[141px] w-full aspect-square " src="./s3-2.jpg" alt="">
+                                    <img class="object-cover h-[141px] w-full aspect-square " src="./images/s3-2.jpg"
+                                        alt="">
                                 </div>
                                 <div class="w-full">
-                                    <img class="object-cover h-[141px]  w-full aspect-square" src="./s3-3.jpg" alt="">
+                                    <img class="object-cover h-[141px]  w-full aspect-square" src="./images/s3-3.jpg"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
 
                         <!-- 左側下方 -->
                         <div class="w-full  ">
-                            <img class="object-cover max-h-[376px] w-full aspect-square" src="./s3-4.jpg" alt="">
+                            <img class="object-cover max-h-[376px] w-full aspect-square" src="./images/s3-4.jpg" alt="">
                         </div>
 
                     </div>
@@ -149,15 +169,15 @@
                     <!-- 右側 -->
                     <div class="w-[416px] max-sm:w-full flex flex-col gap-y-[8px] sm:gap-[24px] ">
                         <div class=" ">
-                            <img class="object-cover max-h-[219px] w-full aspect-square" src="./s3-5.jpg" alt="">
+                            <img class="object-cover max-h-[219px] w-full aspect-square" src="./images/s3-5.jpg" alt="">
                         </div>
 
                         <div class="  ">
-                            <img class="object-cover max-h-[219px] w-full aspect-square" src="./s3-6.jpg" alt="">
+                            <img class="object-cover max-h-[219px] w-full aspect-square" src="./images/s3-6.jpg" alt="">
                         </div>
 
                         <div class=" ">
-                            <img class="object-cover max-h-[219px] w-full aspect-square" src="./s3-7.jpg" alt="">
+                            <img class="object-cover max-h-[219px] w-full aspect-square" src="./images/s3-7.jpg" alt="">
                         </div>
                     </div>
 
@@ -176,31 +196,31 @@
             <!-- 很多商品 -->
             <div class="px-[12px] flex flex-col gap-y-[24px]">
                 <div class="w-full">
-                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s3-1.jpg" alt="">
+                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s3-1.jpg" alt="">
                 </div>
 
                 <div class="w-full">
-                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s3-2.jpg" alt="">
+                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s3-2.jpg" alt="">
                 </div>
 
                 <div class="w-full">
-                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s3-3.jpg" alt="">
+                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s3-3.jpg" alt="">
                 </div>
 
                 <div class="w-full">
-                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s3-4.jpg" alt="">
+                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s3-4.jpg" alt="">
                 </div>
 
                 <div class="w-full">
-                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s3-5.jpg" alt="">
+                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s3-5.jpg" alt="">
                 </div>
 
                 <div class="w-full">
-                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s3-6.jpg" alt="">
+                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s3-6.jpg" alt="">
                 </div>
 
                 <div class="w-full">
-                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s3-7.jpg" alt="">
+                    <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s3-7.jpg" alt="">
                 </div>
 
 
@@ -216,21 +236,21 @@
             <div class="left flex flex-1 gap-[16px] sm:gap-[24px] sm:py-[5px] px-[12px] sm:pl-[12px] ">
                 <div class="flex-1 pt-[48px] flex flex-col sm:gap-[24px] gap-[16px] ">
                     <div class="w-full">
-                        <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s4-1.jpg" alt="">
+                        <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s4-1.jpg" alt="">
                     </div>
 
                     <div class="w-full">
-                        <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s4-2.jpg" alt="">
+                        <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s4-2.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="flex-1 flex flex-col sm:gap-y-[24px] gap-y-[16px]">
                     <div class="w-full">
-                        <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s4-3.jpg" alt="">
+                        <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s4-3.jpg" alt="">
                     </div>
 
                     <div class="w-full">
-                        <img class="object-cover w-[100%] h-[100%] aspect-square" src="./s4-4.jpg" alt="">
+                        <img class="object-cover w-[100%] h-[100%] aspect-square" src="./images/s4-4.jpg" alt="">
                     </div>
                 </div>
 
@@ -244,14 +264,18 @@
                 <form class="sm:hidden" action="" method="post">
                     <div class="flex flex-col gap-y-[24px] mb-[24px] ">
                         <!-- 姓氏 名字 信箱 電話 -->
-                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px] placeholder:text-[#fff]"
+                        <input
+                            class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px] placeholder:text-[#fff]"
                             type="text" name="lastname" id="lastname" placeholder="姓氏111">
-                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px] placeholder:text-[#fff]"
+                        <input
+                            class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px] placeholder:text-[#fff]"
                             type="text" name="firstname" id="firstname" placeholder="名字">
-                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px] placeholder:text-[#fff]"
+                        <input
+                            class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px] placeholder:text-[#fff]"
                             type="email" name="email" id="email" placeholder="信箱">
-                        <input class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px] placeholder:text-[#fff]" type="tel"
-                            name="phone" id="phone" placeholder="電話">
+                        <input
+                            class="pl-[12px] py-[16px] border border-[#DEE2E6] bg-[#404040] rounded-[4px] placeholder:text-[#fff]"
+                            type="tel" name="phone" id="phone" placeholder="電話">
                     </div>
                     <button
                         class="bg-[#000] text-[#fff] px-[24px] py-[16px] w-full bg-[#fff] text-[black] rounded-[4px]"
@@ -284,8 +308,7 @@
                             name="phone" id="phone" placeholder="請輸入聯絡電話">
                     </div>
                     <div class="flex justify-end">
-                        <button
-                            class="bg-[#000] text-[#fff] px-[24px] py-[12px] rounded-[4px] bg-[#fff] text-[black]  "
+                        <button class="bg-[#000] text-[#fff] px-[24px] py-[12px] rounded-[4px] bg-[#fff] text-[black]  "
                             type="submit">
                             送出表單
                         </button>
@@ -300,18 +323,18 @@
     <footer class="bg-[#000] py-[60px]  flex flex-col items-center justify-center ">
         <div class="">
             <div class="mb-[24px]">
-                <img class="object-cover" src="./logo2.svg" alt="logo2" srcset="">
+                <img class="object-cover" src="./images/logo2.svg" alt="logo2" srcset="">
             </div>
             <!-- 社群 -->
             <div class="flex gap-x-[40px]">
                 <div class="">
-                    <img class="object-cover" src="./x.svg" alt="fb" srcset="">
+                    <img class="object-cover" src="./images/x.svg" alt="fb" srcset="">
                 </div>
                 <div class="">
-                    <img class="object-cover" src="./ig.svg" alt="ig" srcset="">
+                    <img class="object-cover" src="./images/ig.svg" alt="ig" srcset="">
                 </div>
                 <div class="">
-                    <img class="object-cover" src="./fb.svg" alt="x" srcset="">
+                    <img class="object-cover" src="./images/fb.svg" alt="x" srcset="">
                 </div>
             </div>
 
@@ -326,9 +349,15 @@
         <div
             class="max-w-[calc(1296px+80px)] w-[100%] px-[80px] text-[#fff] flex  max-sm:flex-wrap gap-y-[40px] justify-between">
             <div class="flex gap-x-[24px] max-sm:w-full">
-                <div>最新商品</div>
-                <div>多色選擇</div>
-                <div>訂製耳機</div>
+                <div>
+                    <a href="#latest-products">最新商品</a>
+                </div>
+                <div>
+                    <a href="#color-options">多色選擇</a>
+                </div>
+                <div>
+                    <a href="#custom-headphones">訂製耳機</a>
+                </div>
             </div>
 
             <div>© WEBNAME 2024 All right Reserved</div>
